@@ -5,57 +5,62 @@ import java.util.Collections;
 
 // Customer class to hold customer details
 class Customer {
+    // Private fields to store customer details like voucher ID, name, phone number, offer price, and item selected
     private String voucherID;
     private String name;
     private String phoneNumber;
     private double offerPrice;
     private String itemSelected;
 
-    // Constructor to initialize customer details
+    // Constructor to initialize customer details when an object is created
     public Customer(String voucherID, String name, String phoneNumber, double offerPrice, String itemSelected) {
-        this.voucherID = voucherID;
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.offerPrice = offerPrice;
-        this.itemSelected = itemSelected;
+        this.voucherID = voucherID; // Assigning voucher ID
+        this.name = name; // Assigning customer name
+        this.phoneNumber = phoneNumber; // Assigning phone number
+        this.offerPrice = offerPrice; // Assigning offer price of the voucher
+        this.itemSelected = itemSelected; // Assigning selected item
     }
 
-    // Display customer details
+    // Method to display customer details to the console
     public void displayDetails() {
         System.out.println("Voucher ID: " + voucherID);
         System.out.println("Customer Name: " + name);
         System.out.println("Phone Number: " + phoneNumber);
         System.out.println("Voucher Offer Price: " + offerPrice);
         System.out.println("Item Selected: " + itemSelected);
-        System.out.println("----------------------------");
+        System.out.println("----------------------------"); // Divider for better display formatting
     }
 }
 
-// VoucherSystem class to handle customer entries and display them
+// VoucherSystem class to handle adding and displaying customers and selecting lucky winners
 class VoucherSystem {
+    // List to store multiple customer objects
     private ArrayList<Customer> customers = new ArrayList<>();
 
-    // Method to add a customer
+    // Method to add a customer to the customers list
     public void addCustomer(Customer customer) {
-        customers.add(customer);
+        customers.add(customer); // Add the customer to the ArrayList
     }
 
-    // Method to display all customers
+    // Method to display details of all customers in the system
     public void displayAllCustomers() {
+        // Loop through each customer and call the displayDetails method to print their info
         for (int i = 0; i < customers.size(); i++) {
-            customers.get(i).displayDetails();
+            customers.get(i).displayDetails(); // Fetch each customer and display their details
         }
     }
 
-    // Method to display top 6 lucky winners randomly selected
+    // Method to randomly shuffle customers and display top 6 lucky winners
     public void displayLuckyWinners() {
-        // Shuffle the list of customers randomly
+        // Shuffle the list of customers to randomly mix them
         Collections.shuffle(customers);
 
-        // Select the top 6 customers from the shuffled list
+        // Display a message for the lucky winners
         System.out.println("\n\nTop 6 Lucky Winners:");
+        
+        // Loop to display the top 6 customers from the shuffled list
         for (int i = 0; i < 6; i++) {
-            customers.get(i).displayDetails();
+            customers.get(i).displayDetails(); // Display the details of the customer
         }
     }
 }
@@ -63,24 +68,24 @@ class VoucherSystem {
 // Main class to run the program
 public class LuluHypermarketBumperOffers {
     public static void main(String[] args) {
-        // Create VoucherSystem object
+        // Create a new VoucherSystem object to manage the customers
         VoucherSystem voucherSystem = new VoucherSystem();
 
-        // Create and add customers using the 'new' keyword
+        // Create several Customer objects with various details
         Customer customer1 = new Customer("V001", "John Doe", "9876543210", 200.0, "TV");
         Customer customer2 = new Customer("V002", "Jane Smith", "9123456789", 150.0, "Microwave");
         Customer customer3 = new Customer("V003", "Michael Brown", "9345678901", 300.0, "Washing Machine");
         Customer customer4 = new Customer("V004", "Emily Davis", "9543216780", 100.0, "Blender");
         Customer customer5 = new Customer("V005", "Chris Johnson", "9345671234", 250.0, "Laptop");
 
-        // Add customers to the voucher system
+        // Add these customers to the voucher system
         voucherSystem.addCustomer(customer1);
         voucherSystem.addCustomer(customer2);
         voucherSystem.addCustomer(customer3);
         voucherSystem.addCustomer(customer4);
         voucherSystem.addCustomer(customer5);
 
-        // Adding more customers
+        // Create and add more Customer objects
         Customer customer6 = new Customer("V006", "Sarah White", "9876547890", 500.0, "Fridge");
         Customer customer7 = new Customer("V007", "David Martin", "9654321098", 400.0, "Air Conditioner");
         Customer customer8 = new Customer("V008", "Amy Green", "9123456788", 120.0, "Toaster");
@@ -93,6 +98,7 @@ public class LuluHypermarketBumperOffers {
         voucherSystem.addCustomer(customer9);
         voucherSystem.addCustomer(customer10);
 
+        // Create even more customers
         Customer customer11 = new Customer("V011", "Ethan Lee", "9786453210", 80.0, "Vacuum Cleaner");
         Customer customer12 = new Customer("V012", "Emma Clark", "9871236540", 450.0, "Oven");
         Customer customer13 = new Customer("V013", "William Walker", "9543216780", 320.0, "Smartphone");
@@ -105,6 +111,7 @@ public class LuluHypermarketBumperOffers {
         voucherSystem.addCustomer(customer14);
         voucherSystem.addCustomer(customer15);
 
+        // Create final batch of customers
         Customer customer16 = new Customer("V016", "Mia Harris", "9876543901", 180.0, "Juicer");
         Customer customer17 = new Customer("V017", "Benjamin King", "9345678921", 90.0, "Electric Kettle");
         Customer customer18 = new Customer("V018", "Charlotte Scott", "9871234598", 140.0, "Mixer");
@@ -121,7 +128,7 @@ public class LuluHypermarketBumperOffers {
         System.out.println("All Customers Who Filled Vouchers:");
         voucherSystem.displayAllCustomers();
 
-        // Display top 6 lucky winners
+        // Display the top 6 lucky winners
         voucherSystem.displayLuckyWinners();
     }
 }
