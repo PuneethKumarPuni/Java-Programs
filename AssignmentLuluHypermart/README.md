@@ -56,19 +56,6 @@ public class LuluHypermarketDumperOffers {
 ### Example Output
 When the program is executed, it will print the details of all customers who filled out vouchers and randomly select six lucky winners from the list.
 
-## How to Run the Program
-
-1. Ensure you have Java Development Kit (JDK) installed on your machine.
-2. Copy the code into a file named `LuluHypermarketDumperOffers.java`.
-3. Compile the code using the command:
-   ```bash
-   javac LuluHypermarketDumperOffers.java
-   ```
-4. Run the program using the command:
-   ```bash
-   java LuluHypermarketDumperOffers
-   ```
-
 ## Conclusion
 
 The **Lulu Hypermarket Voucher System** is a straightforward Java application that effectively demonstrates the use of objects, classes, and loops in programming. It provides a fun and interactive way to simulate a promotional voucher system, showcasing the practical application of fundamental programming concepts.

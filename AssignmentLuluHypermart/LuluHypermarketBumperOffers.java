@@ -61,7 +61,7 @@ class VoucherSystem {
 }
 
 // Main class to run the program
-public class LuluHypermarketDumperOffers {
+public class LuluHypermarketBumperOffers {
     public static void main(String[] args) {
         // Create VoucherSystem object
         VoucherSystem voucherSystem = new VoucherSystem();
