@@ -100,7 +100,7 @@ public class LuluHypermarketBumperOffers {
 
         // Create even more customers
         Customer customer11 = new Customer("V011", "Iron Man", "9786453210", 975000.8, "Suit");
-        Customer customer12 = new Customer("V012", "Captain", "9871236540", 450.0, "Vibranium Shield");
+        Customer customer12 = new Customer("V012", "Captain", "9871236540", 450000.0, "Vibranium Shield");
         Customer customer13 = new Customer("V013", "Thor", "9543216780", 301568.45, "Hammer");
         Customer customer14 = new Customer("V014", "Super Man", "9213456789", 58000.97, "Pant");
         Customer customer15 = new Customer("V015", "Wonder Woman", "9641234567", 780007.85, "Lasso and Shield");
