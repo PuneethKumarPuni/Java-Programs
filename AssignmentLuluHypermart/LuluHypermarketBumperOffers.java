@@ -72,11 +72,11 @@ public class LuluHypermarketBumperOffers {
         VoucherSystem voucherSystem = new VoucherSystem();
 
         // Create several Customer objects with various details
-        Customer customer1 = new Customer("V001", "John Doe", "9876543210", 200.0, "TV");
-        Customer customer2 = new Customer("V002", "Jane Smith", "9123456789", 150.0, "Microwave");
-        Customer customer3 = new Customer("V003", "Michael Brown", "9345678901", 300.0, "Washing Machine");
-        Customer customer4 = new Customer("V004", "Emily Davis", "9543216780", 100.0, "Blender");
-        Customer customer5 = new Customer("V005", "Chris Johnson", "9345671234", 250.0, "Laptop");
+        Customer customer1 = new Customer("V001", "Puneeth", "9353950078", 84763.98, "Asus Rog G15");
+        Customer customer2 = new Customer("V002", "Abhi", "9123456789", 164435.70, "MSI SWORD 16 HX");
+        Customer customer3 = new Customer("V003", "Krithik", "9345678901", 183740.70, "PH OMEN INTEL CORE 17");
+        Customer customer4 = new Customer("V004", "Davis", "9543216780", 55861.00, "Blender");
+        Customer customer5 = new Customer("V005", "Johnson", "9345671234", 80000.50, "Laptop");
 
         // Add these customers to the voucher system
         voucherSystem.addCustomer(customer1);
