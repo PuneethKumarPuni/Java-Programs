@@ -86,11 +86,11 @@ public class LuluHypermarketBumperOffers {
         voucherSystem.addCustomer(customer5);
 
         // Create and add more Customer objects
-        Customer customer6 = new Customer("V006", "Sarah White", "9876547890", 500.0, "Fridge");
-        Customer customer7 = new Customer("V007", "David Martin", "9654321098", 400.0, "Air Conditioner");
-        Customer customer8 = new Customer("V008", "Amy Green", "9123456788", 120.0, "Toaster");
-        Customer customer9 = new Customer("V009", "James Wilson", "9001234567", 600.0, "Dishwasher");
-        Customer customer10 = new Customer("V010", "Olivia Taylor", "9987654321", 700.0, "Television");
+        Customer customer6 = new Customer("V006", "Sarah", "9876547890", 48653.50, "Phone");
+        Customer customer7 = new Customer("V007", "David", "9654321098", 38456.92, "Air Conditioner");
+        Customer customer8 = new Customer("V008", "Mani", "9123456788", 25000.00, "Toaster");
+        Customer customer9 = new Customer("V009", "James", "9001234567", 12000.00, "Dishwasher");
+        Customer customer10 = new Customer("V010", "Siri", "9987654321", 78256.90, "Television");
 
         voucherSystem.addCustomer(customer6);
         voucherSystem.addCustomer(customer7);
@@ -99,11 +99,11 @@ public class LuluHypermarketBumperOffers {
         voucherSystem.addCustomer(customer10);
 
         // Create even more customers
-        Customer customer11 = new Customer("V011", "Ethan Lee", "9786453210", 80.0, "Vacuum Cleaner");
-        Customer customer12 = new Customer("V012", "Emma Clark", "9871236540", 450.0, "Oven");
-        Customer customer13 = new Customer("V013", "William Walker", "9543216780", 320.0, "Smartphone");
-        Customer customer14 = new Customer("V014", "Sophia Allen", "9213456789", 350.0, "Tablet");
-        Customer customer15 = new Customer("V015", "Daniel Lewis", "9641234567", 220.0, "Smart Watch");
+        Customer customer11 = new Customer("V011", "Iron Man", "9786453210", 975000.8, "Suit");
+        Customer customer12 = new Customer("V012", "Captain", "9871236540", 450.0, "Vibranium Shield");
+        Customer customer13 = new Customer("V013", "Thor", "9543216780", 301568.45, "Hammer");
+        Customer customer14 = new Customer("V014", "Super Man", "9213456789", 58000.97, "Pant");
+        Customer customer15 = new Customer("V015", "Wonder Woman", "9641234567", 780007.85, "Lasso and Shield");
 
         voucherSystem.addCustomer(customer11);
         voucherSystem.addCustomer(customer12);
@@ -112,11 +112,11 @@ public class LuluHypermarketBumperOffers {
         voucherSystem.addCustomer(customer15);
 
         // Create final batch of customers
-        Customer customer16 = new Customer("V016", "Mia Harris", "9876543901", 180.0, "Juicer");
-        Customer customer17 = new Customer("V017", "Benjamin King", "9345678921", 90.0, "Electric Kettle");
-        Customer customer18 = new Customer("V018", "Charlotte Scott", "9871234598", 140.0, "Mixer");
-        Customer customer19 = new Customer("V019", "Henry Adams", "9543216879", 260.0, "Headphones");
-        Customer customer20 = new Customer("V020", "Amelia Baker", "9654321090", 380.0, "Camera");
+        Customer customer16 = new Customer("V016", "Elon Musk", "9876543901", 89000.57, "Earbuds");
+        Customer customer17 = new Customer("V017", "Bill Gates", "9345678921", 120000.00, "Electric Kettle");
+        Customer customer18 = new Customer("V018", "Sara", "9871234598", 15000.00, "Mixer");
+        Customer customer19 = new Customer("V019", "Keerthi", "9543216879", 10000.00, "Headphones");
+        Customer customer20 = new Customer("V020", "Joshua", "9654321090", 152000.00, "Camera");
 
         voucherSystem.addCustomer(customer16);
         voucherSystem.addCustomer(customer17);
