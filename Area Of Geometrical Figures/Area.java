@@ -8,7 +8,7 @@ class Area {
     // Radius of a circle (not used in this code, but can be useful for future methods)
     float radius; 
     // Variable to store the calculated area
-    float area; 
+    float area;
 
     // Method to calculate the area of a rectangle
     void areaRectangle(float l, float b) {
@@ -22,7 +22,6 @@ class Area {
         System.out.println("Area of Rectangle is: " + area); 
     }
 }
-
 // Main class to execute the program
 class Geometry {
     public static void main(String[] args) {
@@ -32,3 +31,20 @@ class Geometry {
         a.areaRectangle(10, 20); 
     }
 }
+// class Area{
+//     float width;
+//     float lenght;
+//     float area;
+//     void getdata(float l, float w){
+//         lenght = l;
+//         width = w;
+//     }
+// }
+// class Exw001Rect{
+//     public static void main(String[] args){
+//     Area R482 = new Area();
+//     R482.getdata(10,20);
+//     R482.area = R482.lenght * R482.width;
+//     System.out.println("The area of the rectangle is: " + R482.area);
+//     }
+// }
